@@ -23,9 +23,8 @@ ul {
     display: grid;
     align-items: center;
     -webkit-box-align: center;
-    background-color: #383e42;
+    background-color: #004e36;
     color: white;
-    border: 1px solid green;
   }
 
   .navbar-div {
@@ -68,7 +67,8 @@ ul {
 /*header  STARTS HERE*/
 
 .hero {
-  background-color: #383e42;
+  background-color: #004e36;
+  color: white;
 }
 
 @media screen and (min-width: 992px) {
@@ -102,7 +102,7 @@ ul {
 
 .hero-info {
   text-align: start;
-  color: #e7d5b6;
+  color: #f8faf9;
   margin-right: 3rem;
 }
 
@@ -123,11 +123,12 @@ ul {
 }
 
 .button-catch-me {
+  border: none;
   margin-top: 10px;
   width: 6rem;
   height: 5vh;
-  background-color: #659cad;
-  color: #e7d5b6;
+  background-color: #e1ad01;
+  color: #102a42;
   border-radius: 30px;
   cursor: pointer;
   text-transform: uppercase;
@@ -135,8 +136,8 @@ ul {
 
 .button-catch-me:hover {
   cursor: pointer;
-  background-color: #e7d5b6;
-  color: #659cad;
+  background-color: white;
+  color: #e1ad01;
 }
 .hero-img {
   position: relative;
@@ -154,7 +155,7 @@ ul {
   .hero-img::before {
     content: "";
     position: absolute;
-    border: 6px solid orange;
+    border: 6px solid #f8faf9;
     border-radius: 1rem;
     width: 100%;
     height: 100%;
@@ -246,19 +247,21 @@ ul {
 .second-section {
   color: white;
   text-align: center;
-  background-color: #383e42;
+  background-color: #f1f5f8;
+  padding-bottom: 7rem;
 }
 
 .heading-services h2 {
   padding-top: 4rem;
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
+  color: #45596c;
 }
 
 .just-a-line-v3 {
   width: 6rem;
   height: 0.3rem;
-  background-color: orange;
+  background-color: #e1ad01;
   margin: 0 auto;
 }
 
@@ -280,7 +283,7 @@ ul {
 .box {
   text-align: center;
   border-radius: 1rem;
-  background-color: #f1f5f8;
+  background-color: white;
 }
 
 .box h3 {
@@ -288,6 +291,7 @@ ul {
   font-weight: 400;
   font-size: 1.5rem;
   margin: 1rem 0rem 0.2rem 0rem;
+  color: #45596c;
 }
 
 .box .just-a-line-v3 {
@@ -300,17 +304,21 @@ ul {
   margin: 0rem 2rem;
   letter-spacing: 1px;
   padding-bottom: 3rem;
+  color: #45596c;
 }
 
 .box:hover {
-  background-color: orange;
+  background-color: #004e36;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
+}
+.box:hover > .work-on-hover {
+  color: white;
 }
 
 .box:hover > .just-a-line-v3 {
-  background-color: white;
+  background-color: #e1ad01;
 }
 
 /* SECOND SECTION ENDS HERE*/
@@ -320,7 +328,7 @@ ul {
 .third-section {
   width: 100%;
   height: 100%;
-  background-color: #383e42;
+  background-color: #004e36;
   padding: 5rem 0rem;
 }
 
