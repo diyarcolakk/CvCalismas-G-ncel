@@ -46,6 +46,11 @@ ul {
     -webkit-box-align: center;
     align-items: center;
   }
+  .nav-logo img {
+    width: 150px;
+    height: 75px;
+    object-fit: cover;
+  }
 
   .nav-menu {
     display: grid;
@@ -128,7 +133,7 @@ ul {
   width: 8rem;
   height: 5vh;
   background-color: #ffd600;
-  color: #fff;
+  color: #038080;
   border-radius: 2rem;
   cursor: pointer;
   text-transform: uppercase;
@@ -146,9 +151,14 @@ ul {
   z-index: 1;
 }
 
+.hero-img img {
+  border-radius: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   .hero-img img {
     max-width: 0;
+    border-radius: 1rem;
   }
 }
 
@@ -212,6 +222,10 @@ ul {
   object-fit: cover;
   z-index: 1;
 }
+.left-hero img {
+  border-radius: 1rem;
+}
+
 .left-hero::before {
   content: "";
   border: 5px solid #004e36;
@@ -225,12 +239,12 @@ ul {
 
 .button-catch-me-v2 {
   margin-top: 10px;
-  width: 6rem;
+  width: 8rem;
   height: 5vh;
   background-color: #004e36;
   border: none;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 1.75rem;
   cursor: pointer;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -833,7 +847,7 @@ ul {
 .card-info-avatar-icon-character {
   width: 2rem;
   height: 2rem;
-  background-color: #ffd600;
+  background-color: #004e36;
   border-radius: 50%;
 }
 
