@@ -25,12 +25,15 @@ Hamburger menü için onClick methodu eklenmeli
 }
 
 .navbar-div {
+  margin: 0 auto;
+  max-width: 1170px;
   width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav-menu {
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +42,7 @@ Hamburger menü için onClick methodu eklenmeli
   cursor: pointer;
 }
 .nav-menu li:hover {
-  color: white;
+  color: black;
   transition: 0.3s ease;
 }
 
@@ -136,6 +139,7 @@ Hamburger menü için onClick methodu eklenmeli
 }
 
 .button-catch-me:hover {
+  transition: 0.3s ease;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   color: #fff;
