@@ -626,6 +626,15 @@ Hamburger menü için onClick methodu eklenmeli
   .button-should {
     font-size: 0.7rem;
   }
+
+  .video-banner {
+    background: #383e42;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    color: white;
+    opacity: 0.9;
+  }
 }
 
 /*Fourth section ends here*/
@@ -751,6 +760,22 @@ Hamburger menü için onClick methodu eklenmeli
   bottom: 1.75rem;
   left: 80%;
 }
+@media screen and (max-width: 768px) {
+  .top-skills {
+    margin: 0;
+    padding: 0;
+  }
+  .top-skills h2 {
+    font-size: 2.2rem;
+  }
+  .bottom-container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem auto 0rem auto;
+    padding-bottom: 3rem;
+  }
+}
 
 /*Fifth section ends here*/
 
@@ -835,15 +860,23 @@ Hamburger menü için onClick methodu eklenmeli
   right: -1.5rem;
   bottom: 40%;
 }
+
+@media screen and (max-width: 768px) {
+  .sixth-section {
+    max-width: 100vw;
+    text-align: center;
+    margin: 3rem auto 6rem auto;
+  }
+  .position-timeline h5 {
+    font-size: 1rem;
+  }
+  .position-timeline p {
+    font-size: 0.85rem;
+  }
+}
 /*Sixth Section Ends Here*/
 
 /*Sevent Section Starts Here*/
-
-@media screen and (max-width: 768px) {
-  .seventh-section {
-    display: none;
-  }
-}
 
 .seventh-section {
   background-color: #004e36;
@@ -988,6 +1021,39 @@ Hamburger menü için onClick methodu eklenmeli
   box-shadow: 0.1rem 0.1rem black;
 }
 
+@media screen and (max-width: 768px) {
+  .seventh-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .default-main-container {
+    width: 80%;
+  }
+
+  .caroussel {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    align-items: center;
+    justify-items: center;
+    row-gap: 3rem;
+  }
+
+  .bar .card-0 {
+    grid-area: a;
+  }
+  .card-1 {
+    grid-area: b;
+  }
+  .card-2 {
+    grid-area: c;
+  }
+}
 /*Seventh-Section Ends Here*/
 
 .footer {
