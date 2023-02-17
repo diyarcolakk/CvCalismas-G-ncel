@@ -926,8 +926,8 @@ Hamburger menü için onClick methodu eklenmeli
 .front-card {
   height: 100%;
   width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+
+  border-radius: 1rem;
 }
 .front-card img {
   object-fit: cover;
@@ -1020,7 +1020,9 @@ Hamburger menü için onClick methodu eklenmeli
   cursor: pointer;
   box-shadow: 0.1rem 0.1rem black;
 }
-
+.front-card a {
+  text-decoration: none;
+}
 @media screen and (max-width: 768px) {
   .seventh-section {
     display: flex;
@@ -1043,8 +1045,18 @@ Hamburger menü için onClick methodu eklenmeli
     justify-items: center;
     row-gap: 3rem;
   }
+  .back-card {
+    display: none;
+  }
+  .default-main-container:hover .front-card {
+    transform: none;
+  }
 
-  .bar .card-0 {
+  .default-main-container:hover .back-card {
+    transform: none;
+  }
+
+  .card-0 {
     grid-area: a;
   }
   .card-1 {
@@ -1052,6 +1064,10 @@ Hamburger menü için onClick methodu eklenmeli
   }
   .card-2 {
     grid-area: c;
+  }
+  .front-card a {
+    display: inline;
+    cursor: pointer;
   }
 }
 /*Seventh-Section Ends Here*/
