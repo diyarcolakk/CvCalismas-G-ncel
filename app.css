@@ -16,9 +16,6 @@ ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
 /* Navbar burada başlıyor.... 
 Hamburger menü için onClick methodu eklenmeli
 */
@@ -66,6 +63,11 @@ Hamburger menü için onClick methodu eklenmeli
   .hamburger {
     display: block;
   }
+
+  .hero-img {
+    display: none;
+  }
+
   .nav-menu {
     display: none;
   }
@@ -113,7 +115,7 @@ Hamburger menü için onClick methodu eklenmeli
 .just-a-line {
   width: 6rem;
   height: 0.3rem;
-  background-color: silver;
+  background-color: rgb(0, 0, 0);
 }
 
 .hero-info h1 {
@@ -140,8 +142,8 @@ Hamburger menü için onClick methodu eklenmeli
 .button-catch-me:hover {
   transition: 0.3s ease;
   cursor: pointer;
-  background-color: silver;
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
 }
 .hero-img {
   position: relative;
@@ -164,7 +166,6 @@ Hamburger menü için onClick methodu eklenmeli
   right: -2rem;
   z-index: -1;
 }
-
 .social-media {
   margin-top: 5rem;
 }
@@ -182,28 +183,30 @@ Hamburger menü için onClick methodu eklenmeli
   color: silver;
   transition: 0.3 ease;
 }
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .hero-center {
+    min-height: calc(100vh - 5rem);
+    row-gap: 2rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  .hero-info {
+    margin: 0 auto;
   }
 
-  .hero-info {
-    margin: 0;
-  }
   .hero-info h1 {
     font-size: 4rem;
   }
   .hero-info h4 {
     font-size: 2rem;
   }
-  .hero-img img {
-    display: none;
-  }
   .hero-img::before {
     display: none;
+  }
+  .button-catch-me {
+    height: 3rem;
   }
 }
 
@@ -286,19 +289,19 @@ Hamburger menü için onClick methodu eklenmeli
 }
 
 @media screen and (max-width: 768px) {
-  .left-hero {
-    display: none;
-  }
-  .About {
-    text-align: center;
-  }
-  .just-a-line-v2 {
-    margin: 0 auto 2rem auto;
-  }
   .first-section {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+  }
+  .left-hero {
+    text-align: center;
+  }
+  .left-hero img {
+    width: 40%;
+  }
+  .left-hero::before {
+    display: none;
   }
 }
 
@@ -433,18 +436,6 @@ Hamburger menü için onClick methodu eklenmeli
     "a c d";
 }
 
-@media screen and (max-width: 768px) {
-  .third-section-grid-container {
-    display: grid;
-    grid-template-rows: 150px 150px;
-    gap: 1rem;
-    grid-template-areas:
-      "a b b"
-      "a c d";
-    padding-right: 1rem;
-  }
-}
-
 .third-section-grid-container a {
   color: white;
   text-decoration: none;
@@ -530,6 +521,25 @@ Hamburger menü için onClick methodu eklenmeli
   transform: scale(0.8);
 }
 
+@media screen and (max-width: 768px) {
+  .third-section-grid-container {
+    padding-left: 0.5rem;
+    width: 98%;
+    grid-template-areas:
+      "b b b"
+      "c c c"
+      "d d d";
+  }
+
+  .project-a {
+    display: none;
+  }
+  .project-a .project-div {
+    display: none;
+  }
+}
+
+/*Third section ends here*/
 /*Fourth section starts here*/
 
 .connect {
@@ -609,6 +619,26 @@ Hamburger menü için onClick methodu eklenmeli
 .button-should:hover {
   background-color: white;
   color: rgb(0, 78, 54, 0.9);
+}
+@media screen and (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.2rem;
+  }
+  .video-text {
+    font-size: 0.8rem;
+  }
+  .button-should {
+    font-size: 0.7rem;
+  }
+
+  .video-banner {
+    background: #383e42;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    color: white;
+    opacity: 0.9;
+  }
 }
 
 /*Fourth section ends here*/
@@ -734,6 +764,22 @@ Hamburger menü için onClick methodu eklenmeli
   bottom: 1.75rem;
   left: 80%;
 }
+@media screen and (max-width: 768px) {
+  .top-skills {
+    margin: 0;
+    padding: 0;
+  }
+  .top-skills h2 {
+    font-size: 2.2rem;
+  }
+  .bottom-container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem auto 0rem auto;
+    padding-bottom: 3rem;
+  }
+}
 
 /*Fifth section ends here*/
 
@@ -818,23 +864,23 @@ Hamburger menü için onClick methodu eklenmeli
   right: -1.5rem;
   bottom: 40%;
 }
+
+@media screen and (max-width: 768px) {
+  .sixth-section {
+    max-width: 100vw;
+    text-align: center;
+    margin: 3rem auto 6rem auto;
+  }
+  .position-timeline h5 {
+    font-size: 1rem;
+  }
+  .position-timeline p {
+    font-size: 0.85rem;
+  }
+}
 /*Sixth Section Ends Here*/
 
 /*Sevent Section Starts Here*/
-
-@media screen and (max-width: 768px) {
-  .seventh-section {
-    display: none;
-  }
-
-  .third-section-grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  #kaldirmalik-proje {
-    display: none;
-  }
-}
 
 .seventh-section {
   background-color: #004e36;
@@ -884,8 +930,8 @@ Hamburger menü için onClick methodu eklenmeli
 .front-card {
   height: 100%;
   width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+
+  border-radius: 1rem;
 }
 .front-card img {
   object-fit: cover;
@@ -978,7 +1024,56 @@ Hamburger menü için onClick methodu eklenmeli
   cursor: pointer;
   box-shadow: 0.1rem 0.1rem black;
 }
+.front-card a {
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .seventh-section {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .default-main-container {
+    width: 80%;
+  }
+
+  .caroussel {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    align-items: center;
+    justify-items: center;
+    row-gap: 3rem;
+  }
+  .back-card {
+    display: none;
+  }
+  .default-main-container:hover .front-card {
+    transform: none;
+  }
+
+  .default-main-container:hover .back-card {
+    transform: none;
+  }
+
+  .card-0 {
+    grid-area: a;
+  }
+  .card-1 {
+    grid-area: b;
+  }
+  .card-2 {
+    grid-area: c;
+  }
+  .front-card a {
+    display: inline;
+    cursor: pointer;
+  }
+}
 /*Seventh-Section Ends Here*/
 
 .footer {
